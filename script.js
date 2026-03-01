@@ -143,4 +143,5 @@ document.addEventListener('DOMContentLoaded', () => {
             window.open(gmailUrl, '_blank');
         });
     }
+
 });
