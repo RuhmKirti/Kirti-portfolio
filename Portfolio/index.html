@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Developer & Designer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Overlay -->
+    <div class="loader-overlay" id="loader">
+        <div class="loader">
+            <div class="spinner"></div>
+            <div class="loader-text">Loading Portfolio...</div>
+        </div>
+    </div>
+
+    <div class="bg-animation"></div>
+    <canvas id="bg-canvas"></canvas>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Kirtis <span>Portfolio</span>.</a>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content hidden fade-up">
+                <h1>Building Digital <span class="accent">Experiences</span></h1>
+                <p> IBM certified Data Scientist with expertise in Machine Learning, AI, NLP, and Business Intelligence, backed by a digital marketing background. Experienced in building end-to-end AI solutions, including chatbots using Python and SQL, and applying data science to optimize marketing campaigns, conversions, and reporting. Strong in analytics, automation, data cleaning, and validation, with a proven ability to adapt across domains. Actively seeking roles where AI and data science drive operational efficiency and business growth.</p>
+                <div class="cta-group">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title hidden fade-up">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card hidden fade-up delay-100">
+                    <h3>AI & Machine Learning</h3>
+                    <p>Machine Learning, Deep Learning, NLP, Generative AI, TensorFlow, PyTorch, Keras, Neural Networks, Regression, Clustering, Hypothesis Testing, AI Ethics</p>
+                </div>
+                <div class="skill-card hidden fade-up delay-200">
+                    <h3>Engineering & Development</h3>
+                    <p>Python, SQL, Scala, C, Assembly, HTML, AWS, BigQuery, Hadoop, MongoDB, REST APIs, Data Pipelines, Django, Tomcat, GitHub, VS Code, Debugging</p>
+                </div>
+                <div class="skill-card hidden fade-up delay-300">
+                    <h3>Analytics & Visualization</h3>
+                    <p>Tableau, Power BI, Data Studio, Matplotlib, Streamlit, Gradio, GA4, GTM, Excel, Sheets, Airtable, Dashboards, Data Cleaning, Beautiful Soup</p>
+                </div>
+                <div class="skill-card hidden fade-up delay-400">
+                    <h3>Business & Marketing</h3>
+                    <p>Digital Marketing, SEO, Google/FB Ads, Content Strategy, Lead Gen, E-Commerce, Leadership, Communication, Teamwork, Sales, Accounting</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section bg-secondary">
+        <div class="container">
+            <h2 class="section-title hidden fade-up">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card hidden fade-up">
+                    <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80'); background-size: cover; background-position: center;"></div>
+                    <div class="project-info">
+                        <h3>Digital Marketing Conversion Prediction Analysis</h3>
+                        <p><strong>Objective:</strong> Developed a machine learning model to predict customer conversions in digital marketing campaigns based on demographic and engagement data.</p>
+                        <p><strong>Key Features:</strong> Ad Spend, Click Through Rate, Time on Site, Conversion Rate, Loyalty Points, Email Opens.</p>
+                        <p><strong>Methodology:</strong> Conducted EDA to identify trends. Preprocessed data using label encoding, scaling, and outlier treatment. Split data into training (80%) and testing (20%) sets.</p>
+                        <p><strong>Models Used:</strong> Logistic Regression (87% Accuracy), Decision Tree, Random Forest, SVM (Strong F1-score).</p>
+                        <p><strong>Outcome:</strong> Enabled improved targeting and resource allocation for marketing campaigns, reducing inefficiencies and enhancing ROAS.</p>
+                        <div class="tags">
+                            <span>Python</span><span>Jupyter Notebook</span><span>Pandas</span><span>Scikit-learn</span><span>Matplotlib</span><span>Seaborn</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container about-container">
+            <div class="about-text hidden fade-right">
+                <h2 class="section-title">About Me</h2>
+                <p>I bridge the gap between business strategy and data-driven technology. My journey started in commerce and marketing, where I realized the true power of data in driving growth. Now, while pursuing my Master of Computer Applications, I specialize in building end-to-end AI tools and data pipelines that solve actual business bottlenecks. Whether it's deploying conversational AI or predicting marketing conversions, I build solutions that don't just look good in a notebook, but actually work in the real world.</p>
+            </div>
+            <div class="about-visual hidden fade-left">
+                <div class="visual-box" style="background-image: url('https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'); background-size: cover; background-position: center;"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-secondary">
+        <div class="container contact-container">
+            <div class="contact-info hidden fade-up">
+                <h2 class="section-title">Let's Work Together</h2>
+                <p>Have a project in mind? I'd love to hear about it. Send me a message and let's create something amazing.</p>
+                <a href="mailto:kirti.aajtak@gmail.com" class="contact-link">kirti.aajtak@gmail.com</a>
+            </div>
+            <form class="contact-form hidden fade-up delay-100">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="5" placeholder="Tell me about your project" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Kirtis Portfolio. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/RuhmKirti" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/in/connect-kirti-singh/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
